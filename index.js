@@ -158,3 +158,6 @@ if (port == null || port == "") {
 app.listen(port, function () {
     console.log("Server started succeessfully..");
 })
+
+// Export the Express API
+module.exports = app;
