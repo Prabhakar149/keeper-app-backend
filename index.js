@@ -12,7 +12,6 @@ app.use(express.json());
 
 //Database
 // mongoose.connect("mongodb://localhost:27017/keeperAppDB", { useNewUrlParser: true });
-
 mongoose.connect("mongodb+srv://admin-ps:Prabhakar10798@cluster0.qiqfd.mongodb.net/keeperAppDB", { useNewUrlParser: true });
 
 
@@ -33,7 +32,6 @@ const userSchema = new mongoose.Schema({
 });
 
 const User = new mongoose.model("User", userSchema);
-
 
 
 app.get("/", function (req, res) {
